@@ -15,8 +15,8 @@ from stock_pred import yeet
 n = 0
 while n == 0:
     print("STARTING")
-    first = input("What stock do you want to train?")
-    otherinput = input("Do you want Yesterday (Y) or all(A) or covid(C)?")
+    first = input("What stock do you want to train? ")
+    otherinput = input("Do you want Yesterday (Y) or all(A) or covid(C)? ")
     check_df = pd.read_csv("nasdaq_screener_1658433635358.csv")
     if first in check_df.values:
         yeet(first, otherinput)

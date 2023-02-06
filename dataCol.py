@@ -24,7 +24,7 @@ def main(first, otherinput):
             check_df = pd.read_csv(r"stock_data.csv", index_col=None)
             if (otherinput + first) in check_df.values: 
                 #check if exists
-                    pref = input("already exists, would you like to renew? (Y/N)")
+                    pref = input("already exists, would you like to renew? (Y/N) ")
                     if pref == "Y" or pref == "y":
                         break
                     else:
